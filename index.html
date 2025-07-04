@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Shroom Kingdom</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F5EBC8; /* Plain yellowish-brownish shade */
+            color: #166534; /* Dark green text */
+            overflow-x: hidden; /* Prevent horizontal scroll */
+            position: relative; /* Needed for absolute positioning of background */
+        }
+        /* Removed #image-background and its related styles */
+
+        .content-section {
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for content */
+            backdrop-filter: blur(5px); /* Frosted glass effect */
+            border-radius: 1.5rem; /* More rounded corners */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            margin-bottom: 2rem;
+            padding: 2.5rem;
+            border: 1px solid #d1fae5; /* Light border */
+        }
+        .btn-primary {
+            background-color: #10b981; /* Emerald green */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.75rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .btn-primary:hover {
+            background-color: #059669; /* Darker emerald */
+            transform: translateY(-2px);
+        }
+        h1, h2, h3 {
+            font-weight: 700;
+            color: #065f46; /* Even darker green for headings */
+        }
+        .feature-card {
+            background-color: #ecfdf5; /* Very light green */
+            border-radius: 1rem;
+            padding: 1.5rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 0.75rem; /* Rounded corners for images */
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Removed Image Background Container -->
+
+    <!-- Main Content -->
+    <div class="relative z-10 min-h-screen flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8">
+
+        <!-- Hero Section -->
+        <header class="text-center mb-16 max-w-4xl w-full">
+            <h1 class="text-6xl sm:text-7xl lg:text-8xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-lime-500 animate-pulse">
+                The Shroom Kingdom
+            </h1>
+            <p class="text-xl sm:text-2xl text-gray-700 mb-8 max-w-2xl mx-auto">
+                Cultivating Wellness, Crafting Culinary Delights, Connecting Communities.
+            </p>
+            <a href="#about" class="btn-primary inline-block">Learn More</a>
+        </header>
+
+        <!-- About Us Section -->
+        <section id="about" class="content-section max-w-5xl w-full text-center">
+            <h2 class="text-4xl mb-6">About Our Vision</h2>
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                The Shroom Kingdom is a pioneering venture dedicated to harnessing the incredible power of Lion's Mane and Turkey Tail mushrooms. We are building a vertically integrated business, from sustainable cultivation to direct-to-consumer culinary experiences and widespread market supply, all centered on these two magnificent fungi.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+                <div class="feature-card">
+                    <img src="https://i.imgur.com/07KzhMI.jpeg" alt="Holistic Wellness" class="w-full h-auto rounded-lg mb-4">
+                    <h3 class="text-2xl mb-3 text-green-700">Holistic Wellness</h3>
+                    <p class="text-gray-600">Producing high-quality medicinal mushrooms for health and vitality.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="https://i.imgur.com/MdxKjGq.jpeg" alt="Culinary Innovation" class="w-full h-auto rounded-lg mb-4">
+                    <h3 class="text-2xl mb-3 text-green-700">Culinary Innovation</h3>
+                    <p class="text-gray-600">Creating a unique restaurant experience with mushroom-centric dishes.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="https://i.imgur.com/hs17qyM.jpeg" alt="Sustainable Supply" class="w-full h-auto rounded-lg mb-4">
+                    <h3 class="text-2xl mb-3 text-green-700">Sustainable Supply</h3>
+                    <p class="text-gray-600">Supplying fresh, locally grown mushrooms to markets across the UAE.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Medical Properties Section -->
+        <section id="medical-properties" class="content-section max-w-5xl w-full">
+            <h2 class="text-4xl mb-6 text-center">The Power of Medicinal Mushrooms</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div>
+                    <h3 class="text-3xl mb-4 text-green-700">Lion's Mane (Hericium erinaceus)</h3>
+                    <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+                        Known for its brain-boosting properties, Lion's Mane is a powerful nootropic. It contains compounds like hericenones and erinacines, which are believed to stimulate the growth of brain cells and protect against cognitive decline.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Supports cognitive function and memory</li>
+                        <li>Promotes nerve growth factor (NGF) production</li>
+                        <li>May reduce symptoms of anxiety and depression</li>
+                        <li>Aids in digestive health</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-3xl mb-4 text-green-700">Turkey Tail (Trametes versicolor)</h3>
+                    <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+                        Turkey Tail is celebrated for its immune-modulating effects. Rich in polysaccharopeptides (PSPs) and polysaccharide K (PSK), it has been extensively studied for its potential to support the immune system, especially in conjunction with conventional treatments.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Boosts immune system function</li>
+                        <li>Rich in antioxidants</li>
+                        <li>Supports gut health</li>
+                        <li>May enhance the effectiveness of certain treatments</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Restaurant Section -->
+        <section id="restaurant" class="content-section max-w-5xl w-full text-center">
+            <h2 class="text-4xl mb-6">The Shroom Kingdom</h2>
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                Imagine a culinary journey where every dish is a celebration of flavor and wellness. Our restaurant will exclusively feature Lion's Mane and Turkey Tail mushrooms, transformed into gourmet vegetarian and vegan creations. From hearty mains to delicate appetizers, experience the versatility and deliciousness of these fungi like never before.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+                <div class="feature-card">
+                    <h3 class="text-2xl mb-3 text-green-700">Innovative Menu</h3>
+                    <p class="text-gray-600">Dishes crafted to highlight the unique textures and flavors of our mushrooms.</p>
+                </div>
+                <div class="feature-card">
+                    <h3 class="text-2xl mb-3 text-green-700">Health-Conscious Dining</h3>
+                    <p class="text-gray-600">Enjoy delicious meals packed with natural health benefits.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Supply Chain Section -->
+        <section id="supply-chain" class="content-section max-w-5xl w-full text-center">
+            <h2 class="text-4xl mb-6">Farm to Market: Our Supply Chain</h2>
+            <p class="class="text-lg text-gray-700 mb-6 leading-relaxed">
+                Our commitment to freshness and quality begins at our state-of-the-art cultivation facility. We meticulously grow Lion's Mane and Turkey Tail mushrooms, ensuring optimal conditions for their medicinal properties and culinary excellence. From our farm, these fresh, organic mushrooms will be distributed directly to vegetable markets across the UAE, providing consumers with unparalleled access to premium produce.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+                <div class="feature-card">
+                    <h3 class="text-2xl mb-3 text-green-700">Sustainable Cultivation</h3>
+                    <p class="text-gray-600">Eco-friendly practices for premium mushroom growth.</p>
+                </div>
+                <div class="feature-card">
+                    <h3 class="text-2xl mb-3 text-green-700">Quality Control</h3>
+                    <p class="text-gray-600">Rigorous standards from spore to harvest.</p>
+                </div>
+                <div class="feature-card">
+                    <h3 class="text-2xl mb-3 text-green-700">Nationwide Distribution</h3>
+                    <p class="text-gray-600">Fresh mushrooms delivered to markets across the UAE.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Invest Section -->
+        <section id="invest" class="content-section max-w-5xl w-full text-center">
+            <h2 class="text-4xl mb-6">Why Invest in The Shroom Kingdom?</h2>
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                The Shroom Kingdom represents a unique opportunity in the burgeoning health and wellness market. With a multi-pronged business model, strong demand for medicinal fungi, and a commitment to quality and sustainability, we are poised for significant growth. Join us in cultivating a healthier future and a thriving business.
+            </p>
+            <ul class="list-disc list-inside text-gray-600 space-y-2 text-left mx-auto max-w-xl">
+                <li><strong>Growing Market:</strong> Increasing consumer awareness of medicinal mushrooms.</li>
+                <li><strong>Diversified Revenue Streams:</strong> Restaurant, fresh produce, and potential for supplements.</li>
+                <li><strong>Unique Value Proposition:</strong> Fresh, locally grown, high-quality Lion's Mane and Turkey Tail.</li>
+                <li><strong>Scalable Model:</strong> Potential for expansion across the UAE and beyond.</li>
+                <li><strong>Experienced Team:</strong> Passionate experts in mycology and business.</li>
+            </ul>
+            <a href="#contact" class="btn-primary inline-block mt-8">Pitch Deck Coming Soon!</a>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="content-section max-w-5xl w-full text-center">
+            <h2 class="text-4xl mb-6">Get in Touch</h2>
+            <p class="text-lg text-gray-700 mb-6">
+                Interested in learning more about The Shroom Kingdom or becoming a partner? We'd love to hear from you.
+            </p>
+            <p class="text-xl font-semibold text-green-800">Email: ansarzubair@gmail.com</p>
+            <p class="text-xl font-semibold text-green-800">Phone: +971555607760</p>
+        </section>
+
+        <footer class="mt-12 text-center text-gray-500 text-sm">
+            &copy; 2025 The Shroom Kingdom. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
